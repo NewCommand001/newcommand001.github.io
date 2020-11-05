@@ -20,6 +20,8 @@ body {
 
 .page-container {
     @include desktop-only {
+        display: flex;
+        flex-wrap: wrap;
         height: 100%;
     }
 }
@@ -31,7 +33,8 @@ body {
 
     @include desktop-only {
         width: 32.98%;
-        float: left;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

@@ -5,7 +5,7 @@ footer {
     margin-top: 48px;
 
     @include desktop-only {
-        display: none;
+        width: 100%;
     }
 
     p {
