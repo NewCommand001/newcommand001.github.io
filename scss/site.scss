@@ -49,6 +49,7 @@ body {
 
     @include desktop-only {
         flex-direction: row;
+        margin-bottom: 8px;
     }
 
     .guild-information-list {
@@ -75,7 +76,11 @@ body {
 
             li {
                 margin-bottom: 36px;
-                text-decoration: underline;
+                text-decoration: underline dotted;
+
+                @include desktop-only {
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -87,6 +92,10 @@ body {
     h3 {
         margin-bottom: 24px;
         font-size: 1.75rem;
+
+        @include desktop-only {
+            margin-bottom: 4px;
+        }
     }
     
     p {
