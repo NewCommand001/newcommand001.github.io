@@ -1,0 +1,27 @@
+.left-image {
+    width: 32.98%;
+    height: 100%;
+    float: left;
+    background-image: url("../images/walker.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%;
+
+    @include small-viewport-only {
+        display: none;
+    }
+}
+
+.right-image {
+    width: 32.98%;
+    height: 100%;
+    float: left;
+    background-image: url("../images/tie-fighter.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 95%;
+
+    @include small-viewport-only {
+        display: none;
+    }
+}
