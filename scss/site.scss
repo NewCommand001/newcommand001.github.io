@@ -6,9 +6,11 @@ html {
     background-color: #1a1a1d;
     color: #ffffff;
     font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 24px;
 
     @include desktop-only {
         height: 100%;
+        font-size: 16px;
     }
 }
 
@@ -67,22 +69,13 @@ body {
             padding: 0;
 
             h3 {
-                font-size: 48px;
                 margin-bottom: 24px;
-
-                @include desktop-only {
-                    font-size: 36px;
-                }
+                font-size: 1.75rem;
             }
 
             li {
-                font-size: 36px;
                 margin-bottom: 36px;
                 text-decoration: underline;
-
-                @include desktop-only {
-                    font-size: 24px;
-                }
             }
         }
     }
@@ -92,8 +85,13 @@ body {
     text-align: center;
 
     h3 {
-        font-size: 48px;
         margin-bottom: 24px;
+        font-size: 1.75rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
 
