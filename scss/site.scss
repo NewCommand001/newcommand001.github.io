@@ -3,47 +3,75 @@
 @import "_fonts.scss";
 
 html {
-    background-color: #1A1A1D;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 100%;
+    background-color: #1a1a1d;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    @include desktop-only {
+        height: 100%;
+    }
 }
 
 body {
-    height: 100%;
+    @include desktop-only {
+        height: 100%;
+    }
 }
 
 .content-container {
-    color: #C3073F;
-    width: 32.98%;
-    float: left;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 
-    @include small-viewport-only {
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
+    @include desktop-only {
+        width: 32.98%;
+        float: left;
     }
 }
 
 .guild-information {
     text-align: center;
-    font-size: 24px;
-    color: #FFFFFF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-direction: row;
 
-    @include small-viewport-only {
-        flex-direction: column;
+    @include desktop-only {
+        flex-direction: row;
     }
 
     .guild-information-list {
+        &:first-of-type {
+            margin-bottom: 24px;
+        }
+
+        @include desktop-only {
+            width: 45%;
+            
+            &:first-of-type {
+                margin-right: auto;
+            }
+        }
+
         ul {
             list-style-type: none;
+            padding: 0;
 
             h3 {
+                font-size: 48px;
+                margin-bottom: 24px;
+
+                @include desktop-only {
+                    font-size: 36px;
+                }
+            }
+
+            li {
+                font-size: 36px;
                 margin-bottom: 12px;
+
+                @include desktop-only {
+                    font-size: 24px;
+                }
             }
         }
     }
