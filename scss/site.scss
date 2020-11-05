@@ -18,6 +18,12 @@ body {
     }
 }
 
+.page-container {
+    @include desktop-only {
+        height: 100%;
+    }
+}
+
 .content-container {
     width: 85%;
     margin-left: auto;
@@ -79,3 +85,4 @@ body {
 
 @import "_side-banners.scss";
 @import "_header.scss";
+@import "_footer.scss";

@@ -1,0 +1,16 @@
+footer {
+    font-size: 12px;
+    text-align: center;
+    border-top: 2px solid #4E4E50;
+    margin-top: 48px;
+
+    @include desktop-only {
+        display: none;
+    }
+
+    p {
+        a {
+            color: #950740;
+        }
+    }
+}
