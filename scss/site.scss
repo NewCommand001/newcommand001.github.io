@@ -43,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 36px;
 
     @include desktop-only {
         flex-direction: row;
@@ -84,6 +85,15 @@ body {
                 }
             }
         }
+    }
+}
+
+.how-to-join {
+    text-align: center;
+
+    h3 {
+        font-size: 48px;
+        margin-bottom: 24px;
     }
 }
 
